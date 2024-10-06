@@ -1,9 +1,10 @@
 import './style.css';
+import { Dashboard } from '../../components/Dashboard';
 
 export const HomePage = () => {
   return (
     <>
-      {/* ↓↓↓ Zde z komponent poskládej svůj chytrý dům ↓↓↓ */}
+          <Dashboard/>
     </>
   );
 };

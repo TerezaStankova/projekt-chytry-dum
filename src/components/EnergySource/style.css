@@ -1,0 +1,30 @@
+.energy__source {
+	display: flex;
+}
+
+.energy__icon {
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.energy__icon img {
+	display: block;
+	width: 25px;
+}
+
+.energy-consumption {
+	flex: 1;
+}
+
+.energy__description {
+	font-size: 14px;
+	font-weight: 300;
+	color: #666;
+}
+
+.energy__value {
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+}

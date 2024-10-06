@@ -9,7 +9,7 @@ export default defineConfig({
   },
   build: {
     outDir: '../dist',
-    modulePreload: false,
+    modulePreload: true,
   },
   plugins: [react()],
 });
