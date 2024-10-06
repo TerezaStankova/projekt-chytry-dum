@@ -7,14 +7,14 @@ export const Blinds = () => {
 	const [open, setOpen] = useState(true);
 
 	return (
-		<div class="blinds">
-			<div class="blinds__icon">
+		<div className="blinds">
+			<div className="blinds__icon">
 				<img src={open ? blindsOpen : blindsClosed} />
 			</div>
-				<div class="blinds__name">
+				<div className="blinds__name">
 					Žaluzie
 				</div>
-				<div class="blinds__controls">				
+				<div className="blinds__controls">				
 					<button onClick={() => setOpen(!open)} className={open ? "button button--active" : "button"}>Otevřeno</button>
 					<button onClick={() => setOpen(!open)} className={open ? "button" : "button--active"}>Zavřeno</button>
 				</div>							
