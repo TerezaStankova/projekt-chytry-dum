@@ -1,10 +1,10 @@
 import './style.css';
-import { Dashboard } from '../../components/Dashboard';
+import { SmartHome } from '../../components/SmartHome';
 
 export const HomePage = () => {
   return (
     <>
-          <Dashboard/>
+          <SmartHome/>
     </>
   );
 };
