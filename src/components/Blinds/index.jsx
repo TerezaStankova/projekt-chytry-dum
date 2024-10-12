@@ -3,8 +3,8 @@ import blindsOpen from './images/blinds-open.svg';
 import blindsClosed from './images/blinds-closed.svg';
 import { useState } from 'react';
 
-export const Blinds = () => {
-	const [open, setOpen] = useState(true);
+export const Blinds = ({ blindsData }) => {
+	const [open, setOpen] = useState(blindsData === 'open' ? true : false);
 
 	return (
 		<div className="blinds">

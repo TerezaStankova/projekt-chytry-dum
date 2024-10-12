@@ -1,14 +1,14 @@
-﻿import './style.css';
-import electricityIcon from './images/electricity.svg'; 
-import waterIcon from './images/water.svg'; 
+﻿import { EnergySource } from '../EnergySource';
+import electricityIcon from './images/electricity.svg';
+import waterIcon from './images/water.svg';
+import './style.css';
 
-import { EnergySource } from '../EnergySource';
 
-export const Energy = () => {
+export const Energy = ({ energyData }) => {
 	return (
 		<div className="energy">
-			<EnergySource icon={electricityIcon} description='Elektřina' value='36.7 kW'/>
-			<EnergySource icon={waterIcon} description='Voda' value='14.1 m'/>
+			<EnergySource icon={electricityIcon} description='Elektřina' value={energyData.electricity} unit=' kW'/>
+			<EnergySource icon={waterIcon} description='Voda' value={energyData.water} unit='m³'/>
 		</div>
 	);
 };

@@ -2,14 +2,15 @@
 import { Light } from '../Light';
 
 
-export const Lights = () => {
+export const Lights = ({ lightsData }) => {
 
 	return (
 		<div className="lights">
-			<Light name='Obývací pokoj' on={false}/>
-			<Light name='Ložnice' on={true}/>
-			<Light name='Kuchyň' on={true}/>
-			<Light name='Chodba' on={false}/>
+			{
+				lightsData.map((light) => 
+					<Light name={light.name} on={light.state === 'on' ? true : false} />
+				)
+			}			
 		</div>
 	);
 };
